@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Equipos - Clínica del sueño y Neurología</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .equipment-gallery {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .gallery-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .gallery-description {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #666;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .equipment-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .equipment-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .equipment-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(45deg, #ffc107, #ff9800);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 500;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .equipment-info {
+            padding: 20px;
+        }
+        
+        .equipment-name {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .equipment-description {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .upload-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        .upload-area {
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+        }
+        
+        .upload-area:hover {
+            border-color: #ffc107;
+        }
+        
+        .upload-icon {
+            font-size: 3rem;
+            color: #999;
+            margin-bottom: 20px;
+        }
+        
+        .upload-text {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .upload-button {
+            background: #ffc107;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .upload-button:hover {
+            background: #e0a800;
+        }
+        
+        @media (max-width: 768px) {
+            .equipment-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">polisomnografía-PSG</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">polisomnografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quienes-somos.html" class="nav-link">quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sala-de-sueno.html" class="nav-link">sala de sueño</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="nuestros-equipos.html" class="nav-link">nuestros equipos</a>
+                        <div class="active-indicator"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="psg-interpretacion.html" class="nav-link">PSG interpretacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="entrega-de-resultados.html" class="nav-link">entrega de resultados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="comodidades-paciente.html" class="nav-link">COMODIDADES PARA EL PACIE...</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="search-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </div>
+        </div>
+        
+        <!-- Formas geométricas decorativas del header -->
+        <div class="header-decoration">
+            <div class="geo-shape shape-1"></div>
+            <div class="geo-shape shape-2"></div>
+            <div class="geo-shape shape-3"></div>
+        </div>
+    </header>
+
+    <!-- Sección Hero principal -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <h1 class="hero-title">nuestros equipos</h1>
+            
+            <!-- Formas geométricas decorativas del hero -->
+            <div class="hero-decoration">
+                <div class="geo-shape hero-shape-1"></div>
+                <div class="geo-shape hero-shape-2"></div>
+                <div class="geo-shape hero-shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Línea divisoria amarilla gruesa -->
+    <div class="yellow-divider"></div>
+
+    <!-- Galería de equipos -->
+    <section class="equipment-gallery">
+        <div class="gallery-container">
+            <h2 class="gallery-title">Equipamiento de Alta Tecnología</h2>
+            <p class="gallery-description">
+                Contamos con tecnología de última generación para estudios de sueño y neurofisiología clínica, garantizando resultados precisos y confiables para nuestros pacientes.
+            </p>
+            
+            <!-- Sección de carga de imágenes -->
+            <div class="upload-section">
+                <div class="upload-area" onclick="document.getElementById('imageUpload').click()">
+                    <div class="upload-icon">📷</div>
+                    <p class="upload-text">Haz clic aquí para agregar imágenes de equipos</p>
+                    <button class="upload-button">Seleccionar imágenes</button>
+                    <input type="file" id="imageUpload" accept="image/*" multiple style="display: none;">
+                </div>
+            </div>
+            
+            <!-- Grid de equipos -->
+            <div class="equipment-grid" id="equipmentGrid">
+                <!-- Equipo 1 -->
+                <div class="equipment-item">
+                    <div class="equipment-image">
+                        <span>Polisomnógrafo Digital</span>
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-name">Sistema PSG Digital</h3>
+                        <p class="equipment-description">
+                            Equipo de polisomnografía de última generación con 32 canales, permite registrar simultáneamente EEG, EOG, EMG, ECG, respiración y saturación de oxígeno.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Equipo 2 -->
+                <div class="equipment-item">
+                    <div class="equipment-image">
+                        <span>Electroencefalógrafo</span>
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-name">EEG Digital 32 Canales</h3>
+                        <p class="equipment-description">
+                            Sistema de electroencefalografía digital de alta resolución para estudios detallados de actividad cerebral durante el sueño y vigilia.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Equipo 3 -->
+                <div class="equipment-item">
+                    <div class="equipment-image">
+                        <span>Sistema Video</span>
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-name">Sistema de Video Monitorización</h3>
+                        <p class="equipment-description">
+                            Cámaras de alta sensibilidad nocturna con grabación digital continua para documentar eventos comportamentales durante el sueño.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Equipo 4 -->
+                <div class="equipment-item">
+                    <div class="equipment-image">
+                        <span>Oxímetro</span>
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-name">Oxímetro de Pulso</h3>
+                        <p class="equipment-description">
+                            Dispositivo de medición continua de saturación de oxígeno y frecuencia cardíaca con algoritmos avanzados de detección de apneas.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Equipo 5 -->
+                <div class="equipment-item">
+                    <div class="equipment-image">
+                        <span>Capnógrafo</span>
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-name">Sistema de Capnografía</h3>
+                        <p class="equipment-description">
+                            Equipo para medición de CO2 espirado, fundamental en el diagnóstico de trastornos respiratorios del sueño.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Equipo 6 -->
+                <div class="equipment-item">
+                    <div class="equipment-image">
+                        <span>CPAP</span>
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-name">CPAP de Titulación</h3>
+                        <p class="equipment-description">
+                            Sistema de presión positiva continua en vía aérea para estudios split-night y titulación de presiones terapéuticas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información de contacto -->
+    <div class="contact-info">
+        <div class="clinic-name">Clínica del sueño y Neurología</div>
+        <div class="address">Av. Providencia 2093 Santiago de Chile</div>
+        <div class="phones">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span style="margin-right: 8px;">22 233 7146</span> - 
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px; margin-left: 8px;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            22 232 3275
+        </div>
+        <div class="email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="#" onclick="this.href='mailto:' + atob('bmV1cm9jbGluaWFjaGlsZUBnbWFpbC5jb20=') + '; return true;" data-protected="true">neuroclinicachile@gmail.com</a>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Funcionalidad para cargar imágenes
+        document.getElementById('imageUpload').addEventListener('change', function(e) {
+            const files = e.target.files;
+            const grid = document.getElementById('equipmentGrid');
+            
+            for (let file of files) {
+                if (file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                        const newItem = document.createElement('div');
+                        newItem.className = 'equipment-item';
+                        
+                        const imageName = file.name.replace(/\.[^/.]+$/, "");
+                        
+                        newItem.innerHTML = `
+                            <div class="equipment-image" style="background-image: url('${e.target.result}'); background-size: cover; background-position: center;">
+                            </div>
+                            <div class="equipment-info">
+                                <h3 class="equipment-name">${imageName}</h3>
+                                <p class="equipment-description">
+                                    Imagen agregada recientemente. Puede editar la descripción según corresponda.
+                                </p>
+                            </div>
+                        `;
+                        
+                        grid.appendChild(newItem);
+                    };
+                    
+                    reader.readAsDataURL(file);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

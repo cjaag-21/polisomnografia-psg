@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO META TAGS -->
+    <title>Preguntas Frecuentes | FAQ Polisomnografía | Clínica del Sueño Chile</title>
+    <meta name="description" content="Preguntas frecuentes sobre polisomnografía, examen de sueño, apnea, insomnio. Todo lo que necesitas saber sobre estudios del sueño en Santiago.">
+    <meta name="keywords" content="faq polisomnografía, preguntas examen sueño, dudas polisomnografía, consulta sueño, santiago chile">
+    
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Preguntas Frecuentes | FAQ Polisomnografía | Clínica del Sueño Chile">
+    <meta property="og:description" content="Respuestas a las preguntas más comunes sobre estudios del sueño y trastornos del sueño.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+    
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://clinicadelsueno.cl/pages/faq.html">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .faq-hero {
+            background: linear-gradient(135deg, var(--gris-oscuro) 0%, var(--amarillo-dorado) 100%);
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .faq-section {
+            padding: 60px 0;
+        }
+        
+        .faq-category {
+            margin-bottom: 50px;
+        }
+        
+        .category-title {
+            font-size: 2rem;
+            color: var(--gris-oscuro);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--amarillo-dorado);
+            padding-left: 20px;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .faq-question {
+            padding: 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            color: var(--gris-oscuro);
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: rgba(218, 165, 32, 0.1);
+        }
+        
+        .faq-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--amarillo-dorado);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+            background: var(--gris-oscuro);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background: rgba(218, 165, 32, 0.05);
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 25px;
+        }
+        
+        .faq-answer p {
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .faq-answer strong {
+            color: var(--gris-oscuro);
+        }
+        
+        /* Estilos para details nativo */
+        details {
+            background: white;
+            border: 1px solid var(--gris-divisor);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        details:hover {
+            border-color: var(--amarillo-dorado);
+            box-shadow: 0 4px 12px rgba(218, 165, 32, 0.1);
+        }
+        
+        summary {
+            padding: 20px 25px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--gris-oscuro);
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            position: relative;
+        }
+        
+        summary:hover {
+            background: rgba(218, 165, 32, 0.05);
+        }
+        
+        /* Triángulo indicador */
+        summary::after {
+            content: '▶';
+            font-size: 12px;
+            color: var(--amarillo-dorado);
+            transition: transform 0.3s ease;
+        }
+        
+        details[open] summary::after {
+            transform: rotate(90deg);
+        }
+        
+        details[open] summary {
+            background: rgba(218, 165, 32, 0.1);
+            border-bottom: 1px solid var(--gris-divisor);
+        }
+        
+        details[open] > .faq-answer {
+            padding: 25px;
+            max-height: 500px;
+            animation: slideDown 0.3s ease;
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: rgba(218, 165, 32, 0.02);
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .search-box {
+            background: white;
+            border-radius: 50px;
+            padding: 20px 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .search-input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            color: var(--gris-oscuro);
+        }
+        
+        .search-btn {
+            background: var(--amarillo-dorado);
+            border: none;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .search-btn:hover {
+            background: #B8941F;
+        }
+        
+        .cta-section {
+            background: var(--gris-oscuro);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .cta-title {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-description {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .contact-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--amarillo-dorado);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+        }
+        
+        .contact-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .faq-section {
+                padding: 40px 0;
+            }
+            
+            .category-title {
+                font-size: 1.5rem;
+            }
+            
+            .faq-question {
+                font-size: 1rem;
+                padding: 20px;
+            }
+            
+            .cta-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">polisomnografía-PSG</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">polisomnografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quienes-somos.html" class="nav-link">quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sala-de-sueno.html" class="nav-link">sala de sueño</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nuestros-equipos.html" class="nav-link">nuestros equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="psg-interpretacion.html" class="nav-link">PSG interpretacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="entrega-de-resultados.html" class="nav-link">entrega de resultados</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                        <div class="active-indicator"></div>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="search-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </div>
+        </div>
+        
+        <!-- Formas geométricas decorativas del header -->
+        <div class="header-decoration">
+            <div class="geo-shape shape-1"></div>
+            <div class="geo-shape shape-2"></div>
+            <div class="geo-shape shape-3"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="faq-hero">
+        <div class="faq-container">
+            <h1 class="hero-title">Preguntas Frecuentes</h1>
+            <p style="font-size: 1.3rem; margin-top: 20px; opacity: 0.9;">
+                Todo lo que necesitas saber sobre estudios del sueño
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <!-- Search Box -->
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Busca tu pregunta..." id="faqSearch">
+                <button class="search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Polisomnografía Category -->
+            <div class="faq-category">
+                <h2 class="category-title">Sobre la Polisomnografía</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Qué es una polisomnografía?</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            <strong>La polisomnografía (PSG)</strong> es el único examen completo que permite estudiar a fondo los trastornos del sueño. Se realiza en un laboratorio especializado donde se monitorean múltiples funciones corporales durante toda la noche: actividad cerebral (EEG), movimientos oculares (EOG), actividad muscular (EMG), ritmo cardíaco (ECG), respiración, flujo de aire, saturación de oxígeno y posición corporal. Este estudio es esencial para diagnosticar correctamente trastornos como apnea del sueño, insomnio crónico, narcolepsia y síndrome de piernas inquietas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cuánto dura el examen y cómo es el proceso?</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            <strong>El proceso dura aproximadamente 12 horas</strong>: llegas entre las 19:30-20:00 horas y te retiras al día siguiente alrededor de las 8:00 AM. El procedimiento incluye: preparación con colocación de electrodos (30-45 minutos), estudio nocturno completo (8 horas de sueño monitoreado), y retiro de electrodos por la mañana. Durante todo el tiempo estarás supervisionado por un técnico especialista en sueño que puede asistirte si lo necesitas. La sala está acondicionada con temperatura controlada y baño privado para tu comodidad.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Duele o es molesto tener los electrodos?</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            <strong>No es doloroso y la mayoría se acostumbra rápidamente.</strong> Los electrodos se colocan con pasta conductora y cinta adhesiva especial. Puedes sentir leve incomodidad inicial al tener múltiples sensores, pero no impiden moverte ni cambiar de posición. Nuestros técnicos están entrenados para hacer el proceso lo más cómodo posible. Si necesitas ir al baño durante la noche, simplemente avisa al técnico y te desconectará temporalmente sin problema.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preparación Category -->
+            <div class="faq-category">
+                <h2 class="category-title">Preparación del Examen</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Debo llevar algo especial para el examen?</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            <strong>Recomendamos llevar:</strong> pijama cómodo de dos piezas (preferiblemente de algodón), ropa interior adicional, artículos de higiene personal (cepillo dental, pasta), medicamentos habituales, y algo de lectura. <strong>No traigas:</strong> teléfonos con notificaciones, tabletas, laptops o aparatos electrónicos. La clínica proporciona toallas, amenidades de baño, y un desayuno completo por la mañana. Si eres paciente pediátrico, puedes traer tu objeto de transición favorito.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Puedo tomar mis medicamentos habituales?</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            <strong>Depende de tu condición específica.</strong> Generalmente sí puedes tomar medicamentos regulares excepto: sedantes, pastillas para dormir, antihistamínicos, y algunos antidepresivos. Es fundamental que <strong>consultes previamente con el médico tratante</strong> y nos informes todos los medicamentos que tomas. Algunos medicamentos requieren suspensión temporaria (generalmente 3-5 días antes) para no alterar los resultados del estudio.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Puedo dormir si no soy en mi cama habitual?</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            <strong>La mayoría de pacientes logran dormir adecuadamente.</strong> Nuestra sala está diseñada para simular un ambiente doméstico cómodo: colchón clínico de alta calidad, control de temperatura, aislamiento acústico, y luz tenue. Si eres muy sensible al cambiar de ambiente, puedes traer tu almohada personal. El objetivo es registrar tu sueño habitual, por eso buscamos crear las condiciones más naturales posibles. En casos muy raros de insomnio severo, se puede repetir el estudio sin costo adicional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Costos y Cobertura Category -->
+            <div class="faq-category">
+                <h2 class="category-title">Costos y Cobertura</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cuánto cuesta una polisomnografía?</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            <strong>Nuestros precios son competitivos y varían según el tipo:</strong> PSG básica convencional, PSG split-night (diagnóstico + titulación CPAP misma noche), o estudios con electrodos adicionales. El <strong>costo aproximado</strong> varía entre $400.000 - $650.000 pesos chilenos. Este valor incluye: estudio completo nocturno, interpretación por neurólogo especialista, informe detallado, y consulta para explicación de resultados sin costo adicional. Ofrecemos formas de pago y convenios con algunas isapres.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Lo cubren las isapres o seguros médicos?</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            <strong>Depende de tu plan de salud.</strong> Algunas isapres cubren parcial o totalmente cuando hay indicación médica y prescripción. Te recomendamos: 1) Consultar con tu isapre específica, 2) Pedir autorización previa si corresponde, 3) Presentar nuestras facturas para reembolso. Trabajamos con varios seguros médicos y podemos emitir boletas y documentos necesarios para tu cobertura. El estudio se considera una prestación médica necesaria cuando existe sospecha clínica de trastornos del sueño.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultados Category -->
+            <div class="faq-category">
+                <h2 class="category-title">Resultados y Tratamiento</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Cuándo listo están los resultados?</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            <strong>Los resultados están listos en 7-10 días hábiles.</strong> El proceso incluye: análisis computarizado inicial con IA, revisión manual completa por técnico especializado, interpretación final por el Dr. Eugenio Soto (neurólogo especialista en sueño), y redacción del informe completo. Te contactaremos para agendar consulta de entrega sin costo adicional. Si necesitas urgencia médica, podemos priorizar tu estudio con cargo adicional.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Qué pasa si diagnóstican apnea del sueño?</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            <strong>Hay tratamientos efectivos disponibles.</strong> Dependiendo de la severidad: leve (cambios de estilo de vida), moderada-severa (CPAP presión positiva), o alternativas como dispositivos orales o cirugía. En nuestra clínica ofrecemos estudio split-night (diagnóstico + titulación CPAP misma noche) para iniciar tratamiento rápidamente si es necesario. El Dr. Soto coordinará el manejo integral y derivación a especialistas si se requiere tratamiento multidisciplinario.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="faq-container">
+            <h2 class="cta-title">¿Aún tienes dudas?</h2>
+            <p class="cta-description">
+                Nuestro equipo está disponible para responder tus preguntas y guiar en el proceso del estudio del sueño.
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3 class="contact-title">Llámanos</h3>
+                    <p class="contact-info">22 233 7146<br>22 232 3275</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3 class="contact-title">Escríbenos</h3>
+                    <p class="contact-info">neuroclinicachile@gmail.com</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3 class="contact-title">Visítanos</h3>
+                    <p class="contact-info">Av. Providencia 2093<br>Santiago, Chile</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información de contacto -->
+    <div class="contact-info">
+        <div class="clinic-name">Clínica del sueño y Neurología</div>
+        <div class="address">Av. Providencia 2093 Santiago de Chile</div>
+        <div class="phones">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span style="margin-right: 8px;">22 233 7146</span> - 
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px; margin-left: 8px;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            22 232 3275
+        </div>
+        <div class="email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="#" onclick="this.href='mailto:' + atob('bmV1cm9jbGluaWFjaGlsZUBnbWFpbC5jb20=') + '; return true;" data-protected="true">neuroclinicachile@gmail.com</a>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // FAQ Accordion Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(faqItem => {
+                    faqItem.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Search functionality
+        document.getElementById('faqSearch').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question span').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-answer p').textContent.toLowerCase();
+                
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

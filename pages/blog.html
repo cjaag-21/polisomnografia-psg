@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO META TAGS -->
+    <title>Blog del Sueño | Artículos Médicos | Clínica del Sueño Chile</title>
+    <meta name="description" content="Blog especializado en medicina del sueño. Aprende sobre apnea del sueño, insomnio, polisomnografía y consejos para dormir mejor. Artículos del Dr. Eugenio Soto.">
+    <meta name="keywords" content="blog del sueño, medicina del sueño, apnea del sueño, insomnio, consejos para dormir, polisomnografía">
+    
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Blog del Sueño | Artículos Médicos">
+    <meta property="og:description" content="Artículos especializados sobre trastornos del sueño y tratamientos.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+    
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://clinicadelsueno.cl/blog/">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .blog-hero {
+            background: linear-gradient(135deg, var(--gris-oscuro) 0%, var(--amarillo-dorado) 100%);
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            padding: 60px 0;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .blog-image {
+            height: 200px;
+            background: linear-gradient(45deg, #ffc107, #ff9800);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .blog-content {
+            padding: 30px;
+        }
+        
+        .blog-category {
+            display: inline-block;
+            background: var(--amarillo-dorado);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .blog-title {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: var(--gris-oscuro);
+            line-height: 1.3;
+        }
+        
+        .blog-excerpt {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .blog-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: var(--amarillo-dorado);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 500;
+        }
+        
+        .read-more {
+            color: var(--amarillo-dorado);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .read-more:hover {
+            color: var(--gris-oscuro);
+        }
+        
+        .featured-article {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, #f9f9f9 0%, white 100%);
+            border-left: 5px solid var(--amarillo-dorado);
+        }
+        
+        .featured-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .featured-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">polisomnografía-PSG</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">polisomnografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quienes-somos.html" class="nav-link">quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sala-de-sueno.html" class="nav-link">sala de sueño</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nuestros-equipos.html" class="nav-link">nuestros equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="psg-interpretacion.html" class="nav-link">PSG interpretacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="entrega-de-resultados.html" class="nav-link">entrega de resultados</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="blog.html" class="nav-link">blog del sueño</a>
+                        <div class="active-indicator"></div>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="search-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </div>
+        </div>
+        
+        <!-- Formas geométricas decorativas del header -->
+        <div class="header-decoration">
+            <div class="geo-shape shape-1"></div>
+            <div class="geo-shape shape-2"></div>
+            <div class="geo-shape shape-3"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <div class="blog-container">
+            <h1 class="hero-title">Blog del Sueño</h1>
+            <p style="font-size: 1.3rem; margin-top: 20px; opacity: 0.9;">
+                Artículos médicos especializados para mejorar tu calidad de sueño y vida
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid">
+        <div class="blog-container">
+            <!-- Artículo Destacado -->
+            <div class="blog-card featured-article">
+                <div class="featured-content">
+                    <div>
+                        <span class="blog-category">ARTÍCULO DESTACADO</span>
+                        <h2 class="blog-title" style="font-size: 1.8rem;">
+                            5 Señales de Apnea del Sueño que No Debes Ignorar
+                        </h2>
+                        <p class="blog-excerpt">
+                            La apnea del sueño afecta al 10% de la población chilena, pero el 80% no está diagnosticada. 
+                            Aprende a identificar los síntomas clave que podrían indicar que necesitas un estudio de sueño.
+                        </p>
+                        <div class="blog-meta">
+                            <div class="blog-author">
+                                <div class="author-avatar">ES</div>
+                                <span>Dr. Eugenio Soto</span>
+                            </div>
+                            <span>15 min lectura</span>
+                        </div>
+                    </div>
+                    <div class="blog-image">
+                        <span>Apnea del Sueño</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artículo 1 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <span>Polisomnografía</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">DIAGNÓSTICO</span>
+                    <h3 class="blog-title">
+                        ¿Cómo Prepararse para una Polisomnografía?
+                    </h3>
+                    <p class="blog-excerpt">
+                        Guía completa para prepararte adecuadamente antes de tu examen de sueño. 
+                        Desde qué ropa llevar hasta medicamentos que debes evitar.
+                    </p>
+                    <div class="blog-meta">
+                        <div class="blog-author">
+                            <div class="author-avatar">ES</div>
+                            <span>Dr. Eugenio Soto</span>
+                        </div>
+                        <span>8 min lectura</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artículo 2 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <span>Insomnio</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">TRASTORNOS</span>
+                    <h3 class="blog-title">
+                        Insomnio Crónico: Causas y Tratamientos
+                    </h3>
+                    <p class="blog-excerpt">
+                        Más del 30% de los chilenos sufren insomnio. Conoce las causas subyacentes 
+                        y los tratamientos más efectivos basados en evidencia científica.
+                    </p>
+                    <div class="blog-meta">
+                        <div class="blog-author">
+                            <div class="author-avatar">ES</div>
+                            <span>Dr. Eugenio Soto</span>
+                        </div>
+                        <span>12 min lectura</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artículo 3 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <span>Consejos</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">TIPS</span>
+                    <h3 class="blog-title">
+                        7 Hábitos para Dormir Mejor Esta Noche
+                    </h3>
+                    <p class="blog-excerpt">
+                        Cambios simples en tu rutina diaria que pueden transformar tu calidad de sueño. 
+                        Basado en las últimas investigaciones en cronobiología.
+                    </p>
+                    <div class="blog-meta">
+                        <div class="blog-author">
+                            <div class="author-avatar">ES</div>
+                            <span>Dr. Eugenio Soto</span>
+                        </div>
+                        <span>6 min lectura</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artículo 4 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <span>Tecnología</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">INNOVACIÓN</span>
+                    <h3 class="blog-title">
+                        Inteligencia Artificial en el Diagnóstico del Sueño
+                    </h3>
+                    <p class="blog-excerpt">
+                        Cómo la IA está revolucionando la interpretación de polisomnografías 
+                        y mejorando la precisión diagnóstica en trastornos del sueño.
+                    </p>
+                    <div class="blog-meta">
+                        <div class="blog-author">
+                            <div class="author-avatar">ES</div>
+                            <span>Dr. Eugenio Soto</span>
+                        </div>
+                        <span>10 min lectura</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artículo 5 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <span>Niños</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">PEDIATRÍA</span>
+                    <h3 class="blog-title">
+                        Trastornos del Sueño en Niños: ¿Cuándo Preocuparse?
+                    </h3>
+                    <p class="blog-excerpt">
+                        Guía para padres sobre problemas comunes del sueño infantil. 
+                        Diferenciar entre normalidad y patología en cada etapa del desarrollo.
+                    </p>
+                    <div class="blog-meta">
+                        <div class="blog-author">
+                            <div class="author-avatar">ES</div>
+                            <span>Dr. Eugenio Soto</span>
+                        </div>
+                        <span>15 min lectura</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artículo 6 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <span>Tratamiento</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-category">TERAPIA</span>
+                    <h3 class="blog-title">
+                        CPAP: Todo lo que Necesitas Saber
+                    </h3>
+                    <p class="blog-excerpt">
+                        Guía completa sobre el tratamiento con presión positiva continua. 
+                        Tipos de CPAP, adaptación y mantenimiento del equipo.
+                    </p>
+                    <div class="blog-meta">
+                        <div class="blog-author">
+                            <div class="author-avatar">ES</div>
+                            <span>Dr. Eugenio Soto</span>
+                        </div>
+                        <span>10 min lectura</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información de contacto -->
+    <div class="contact-info">
+        <div class="clinic-name">Clínica del sueño y Neurología</div>
+        <div class="address">Av. Providencia 2093 Santiago de Chile</div>
+        <div class="phones">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span style="margin-right: 8px;">22 233 7146</span> - 
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px; margin-left: 8px;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            22 232 3275
+        </div>
+        <div class="email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="#" onclick="this.href='mailto:' + atob('bmV1cm9jbGluaWFjaGlsZUBnbWFpbC5jb20=') + '; return true;" data-protected="true">neuroclinicachile@gmail.com</a>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

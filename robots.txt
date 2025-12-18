@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Páginas principales
+Allow: /pages/
+Allow: /css/
+Allow: /js/
+
+# Bloquear archivos de sistema
+Disallow: /*.log$
+Disallow: /server.log
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://clinicadelsueno.cl/sitemap.xml
+
+# Permisos específicos para bots importantes
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Delay crawlcrawling para no sobrecargar servidor
+Crawl-delay: 1

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO META TAGS -->
+    <title>Trastornos del Sueño | Apnea del Sueño | Diagnóstico en Santiago</title>
+    <meta name="description" content="Diagnóstico especializado de trastornos del sueño: apnea del sueño, insomnio, narcolepsia, síndrome de piernas inquietas. Polisomnografía en Santiago con tecnología avanzada.">
+    <meta name="keywords" content="trastornos del sueño, apnea del sueño, insomnio, polisomnografía, diagnóstico del sueño, santiago chile">
+    
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Trastornos del Sueño | Diagnóstico en Santiago">
+    <meta property="og:description" content="Especialistas en diagnóstico de apnea del sueño, insomnio y otros trastornos. Exámenes precisos con tecnología de última generación.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+    
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://clinicadelsueno.cl/pages/trastornos-del-sueno.html">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .disorders-hero {
+            background: linear-gradient(135deg, var(--gris-oscuro) 0%, var(--amarillo-dorado) 100%);
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        
+        .disorders-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .disorders-intro {
+            background: var(--gris-claro);
+            padding: 60px 0;
+        }
+        
+        .intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .disorders-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+        
+        .disorder-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .disorder-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .disorder-header {
+            background: var(--amarillo-dorado);
+            padding: 25px;
+            color: white;
+        }
+        
+        .disorder-title {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .disorder-subtitle {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .disorder-content {
+            padding: 30px;
+        }
+        
+        .symptoms-list {
+            margin: 20px 0;
+        }
+        
+        .symptom-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            color: var(--gris-oscuro);
+        }
+        
+        .symptom-icon {
+            width: 20px;
+            height: 20px;
+            background: var(--amarillo-dorado);
+            border-radius: 50%;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .cta-section {
+            background: var(--gris-oscuro);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-description {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--amarillo-dorado);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #B8941F;
+        }
+        
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+            background: var(--gris-claro);
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--amarillo-dorado);
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--gris-oscuro);
+        }
+        
+        @media (max-width: 768px) {
+            .disorders-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">polisomnografía-PSG</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">polisomnografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quienes-somos.html" class="nav-link">quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sala-de-sueno.html" class="nav-link">sala de sueño</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nuestros-equipos.html" class="nav-link">nuestros equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="psg-interpretacion.html" class="nav-link">PSG interpretacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="entrega-de-resultados.html" class="nav-link">entrega de resultados</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="trastornos-del-sueno.html" class="nav-link">TRASTORNOS DEL SUEÑO</a>
+                        <div class="active-indicator"></div>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="search-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </div>
+        </div>
+        
+        <!-- Formas geométricas decorativas del header -->
+        <div class="header-decoration">
+            <div class="geo-shape shape-1"></div>
+            <div class="geo-shape shape-2"></div>
+            <div class="geo-shape shape-3"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="disorders-hero">
+        <div class="disorders-container">
+            <h1 class="hero-title">Trastornos del Sueño</h1>
+            <p style="font-size: 1.3rem; margin-top: 20px; opacity: 0.9;">
+                Diagnóstico preciso y tratamiento especializado para mejorar tu calidad de vida
+            </p>
+        </div>
+    </section>
+
+    <!-- Introducción -->
+    <section class="disorders-intro">
+        <div class="disorders-container">
+            <div class="intro-content">
+                <h2 style="font-size: 2.2rem; margin-bottom: 20px; color: var(--gris-oscuro);">
+                    ¿Sufres de problemas para dormir?
+                </h2>
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #555;">
+                    Los trastornos del sueño afectan a millones de personas en Chile. Un diagnóstico adecuado es el primer paso para recuperar un sueño reparador. En nuestra clínica especializada, utilizamos tecnología de última generación para identificar y tratar las principales alteraciones del sueño.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="stats-section">
+        <div class="disorders-container">
+            <div class="stat-item">
+                <div class="stat-number">40%</div>
+                <div class="stat-label">Chilenos con problemas de sueño</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">Tipos de trastornos diagnosticados</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Precisión diagnóstica</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Años de experiencia</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid de Trastornos -->
+    <section class="disorders-grid">
+        <div class="disorders-container">
+            <!-- Apnea del Sueño -->
+            <div class="disorder-card">
+                <div class="disorder-header">
+                    <h3 class="disorder-title">Apnea del Sueño</h3>
+                    <p class="disorder-subtitle">Trastorno respiratorio más común</p>
+                </div>
+                <div class="disorder-content">
+                    <p>
+                        Interrupciones repetidas de la respiración durante el sueño que reducen los niveles de oxígeno en sangre.
+                    </p>
+                    <div class="symptoms-list">
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Ronquidos fuertes y frecuentes</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Somnolencia diurna excesiva</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Dolor de cabeza matutino</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Dificultad para concentrarse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insomnio -->
+            <div class="disorder-card">
+                <div class="disorder-header">
+                    <h3 class="disorder-title">Insomnio</h3>
+                    <p class="disorder-subtitle">Dificultad para dormir o permanecer dormido</p>
+                </div>
+                <div class="disorder-content">
+                    <p>
+                        Incapacidad para conciliar o mantener el sueño, o sueño no reparador que afecta el funcionamiento diurno.
+                    </p>
+                    <div class="symptoms-list">
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Dificultad para dormir (más de 30 min)</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Despertares frecuentes nocturnos</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Sueño interrumpido o no reparador</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Fatiga durante el día</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Narcolepsia -->
+            <div class="disorder-card">
+                <div class="disorder-header">
+                    <h3 class="disorder-title">Narcolepsia</h3>
+                    <p class="disorder-subtitle">Somnolencia diurna excesiva</p>
+                </div>
+                <div class="disorder-content">
+                    <p>
+                        Trastorno neurológico que causa somnolencia diurna extrema y ataques de sueño incontrolables.
+                    </p>
+                    <div class="symptoms-list">
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Ataques de sueño repentinos</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Pérdida súbita del tono muscular</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Alucinations al dormir/despertar</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Parálisis del sueño</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Síndrome de Piernas Inquietas -->
+            <div class="disorder-card">
+                <div class="disorder-header">
+                    <h3 class="disorder-title">Síndrome de Piernas Inquietas</h3>
+                    <p class="disorder-subtitle">Impulso incontrolable de mover las piernas</p>
+                </div>
+                <div class="disorder-content">
+                    <p>
+                        Deseo irresistible de mover las piernas, generalmente acompañado de sensaciones incómodas.
+                    </p>
+                    <div class="symptoms-list">
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Hormigueo o picazón en las piernas</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Alivio temporal al moverse</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Síntomas peores por la noche</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Dificultad para conciliar el sueño</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bruxismo -->
+            <div class="disorder-card">
+                <div class="disorder-header">
+                    <h3 class="disorder-title">Bruxismo del Sueño</h3>
+                    <p class="disorder-subtitle">Apretar o rechinar los dientes</p>
+                </div>
+                <div class="disorder-content">
+                    <p>
+                        Hábito inconsciente de apretar o rechinar los dientes durante el sueño.
+                    </p>
+                    <div class="symptoms-list">
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Dolor de mandíbula o cara</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Dolor de cabeza crónico</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Desgaste dental</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Dolor de oído</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terrores Nocturnos -->
+            <div class="disorder-card">
+                <div class="disorder-header">
+                    <h3 class="disorder-title">Terrores Nocturnos</h3>
+                    <p class="disorder-subtitle">Despertares con miedo extremo</p>
+                </div>
+                <div class="disorder-content">
+                    <p>
+                        Episodios de miedo extremo y agitación durante el sueño, con amnesia del evento.
+                    </p>
+                    <div class="symptoms-list">
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Gritos y movimientos violentos</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Taumina cardíaca elevada</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Dificultad para despertar</span>
+                        </div>
+                        <div class="symptom-item">
+                            <div class="symptom-icon"></div>
+                            <span>Sin memoria del episodio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="disorders-container">
+            <h2 class="cta-title">¿Reconoces estos síntomas?</h2>
+            <p class="cta-description">
+                No ignores los problemas de sueño. Un diagnóstico oportuno puede cambiar tu vida. 
+                Contáctanos para una evaluación profesional.
+            </p>
+            <a href="../index.html" class="cta-button">Agendar Consulta</a>
+        </div>
+    </section>
+
+    <!-- Información de contacto -->
+    <div class="contact-info">
+        <div class="clinic-name">Clínica del sueño y Neurología</div>
+        <div class="address">Av. Providencia 2093 Santiago de Chile</div>
+        <div class="phones">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span style="margin-right: 8px;">22 233 7146</span> - 
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px; margin-left: 8px;">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            22 232 3275
+        </div>
+        <div class="email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="#" onclick="this.href='mailto:' + atob('bmV1cm9jbGluaWFjaGlsZUBnbWFpbC5jb20=') + '; return true;" data-protected="true">neuroclinicachile@gmail.com</a>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
