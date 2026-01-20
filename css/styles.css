@@ -180,9 +180,8 @@ img {
     list-style: none;
     gap: 20px;
     align-items: center;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nav-list::-webkit-scrollbar {
@@ -550,36 +549,41 @@ mark {
     .header {
         padding: 25px 0;
     }
-    
+
     .header-container {
         flex-direction: column;
         gap: 20px;
         padding: 15px;
     }
-    
+
     .nav-list {
         flex-wrap: wrap;
         justify-content: center;
         gap: 12px;
+        max-width: 100%;
+    }
+
+    .nav-item {
+        display: inline-block;
     }
 
     .nav-link {
         font-size: 11px;
     }
-    
+
     .hero-title {
         font-size: 36px;
     }
-    
+
     .hero-section {
         padding: 180px 15px 60px 15px; /* Más padding arriba para header sticky en móvil */
     }
-    
+
     .main-description,
     .welcome-text {
         font-size: 16px;
     }
-    
+
     .info-container {
         padding: 0 15px;
     }
@@ -589,23 +593,32 @@ mark {
     .header {
         padding: 20px 0;
     }
-    
+
+    .header-container {
+        gap: 15px;
+    }
+
     .hero-section {
         padding: 160px 15px 60px 15px; /* Padding ajustado para header sticky en móvil */
     }
-    
+
     .nav-list {
         gap: 8px;
+        justify-content: center;
+    }
+
+    .nav-item {
+        display: inline-block;
     }
 
     .nav-link {
         font-size: 10px;
     }
-    
+
     .hero-title {
         font-size: 28px;
     }
-    
+
     .logo-text {
         font-size: 16px;
     }
