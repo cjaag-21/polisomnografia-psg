@@ -294,9 +294,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 keywords: ['blog', 'artículos', 'noticias', 'información', 'consejos']
             },
             {
-                title: 'FAQ',
+                title: 'Información y Noticias',
+                description: 'Noticias y actualidad sobre el sueño',
+                url: 'informacion-noticias.html',
+                keywords: ['información', 'noticias', 'actualidad', 'artículos', 'salud']
+            },
+            {
+                title: 'Preguntas Frecuentes',
                 description: 'Preguntas frecuentes sobre estudios de sueño',
-                url: 'faq.html',
+                url: 'preguntas-frecuentes.html',
                 keywords: ['faq', 'preguntas', 'dudas', 'ayuda', 'guía']
             },
             {

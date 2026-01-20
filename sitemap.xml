@@ -72,7 +72,14 @@
     </url>
     
     <url>
-        <loc>https://clinicadelsueno.cl/pages/faq.html</loc>
+        <loc>https://clinicadelsueno.cl/pages/informacion-noticias.html</loc>
+        <lastmod>2024-12-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://clinicadelsueno.cl/pages/preguntas-frecuentes.html</loc>
         <lastmod>2024-12-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>

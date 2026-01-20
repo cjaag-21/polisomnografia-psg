@@ -172,13 +172,26 @@ img {
     flex: 1;
     display: flex;
     justify-content: center;
+    overflow-x: auto;
 }
 
 .nav-list {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.nav-list::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .nav-item {
@@ -188,11 +201,12 @@ img {
 .nav-link {
     color: var(--blanco);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     text-transform: lowercase;
     transition: color 0.3s ease;
     padding: 5px 0;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -546,11 +560,11 @@ mark {
     .nav-list {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 12px;
     }
-    
+
     .nav-link {
-        font-size: 12px;
+        font-size: 11px;
     }
     
     .hero-title {
@@ -581,11 +595,11 @@ mark {
     }
     
     .nav-list {
-        gap: 10px;
+        gap: 8px;
     }
-    
+
     .nav-link {
-        font-size: 11px;
+        font-size: 10px;
     }
     
     .hero-title {
