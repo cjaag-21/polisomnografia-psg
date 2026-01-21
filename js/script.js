@@ -35,7 +35,7 @@ function validateAndSanitizeInput(input, type = 'text') {
             
         case 'name':
             // Permitir solo letras, espacios y caracteres comunes en nombres
-            return sanitized.replace(/[^a-zA-Z\sáéíóúñÁÉÍÓÚÑ-']/g, '');
+            return sanitized.replace(/[^a-zA-Z\sáéíóúñÁÉÍÓÚÑ'-]/g, '');
             
         default:
             return sanitized.replace(/[<>]/g, ''); // Remover tags HTML
